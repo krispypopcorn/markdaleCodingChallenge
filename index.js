@@ -6,6 +6,11 @@ var emptyTable = document.querySelector("#addrTable");
 $("#get").click(function() {
   printJson();
 });
+
+$("#send").click(function() {
+  transact();
+});
+
 //n4VB9KQQSSKaS1Rw7RAyoodHysDnTaPEMM
 function printJson() {
   let address = document.getElementById("addrInput").value;
@@ -57,11 +62,15 @@ function showBalance(d) {
 }
 
 function transact() {
-  let address = document.getElementById("addrInput").value;
+  let sourceAddress = document.getElementById("transactionInput").value;
+  let destinationAddress = document.getElementById("transactionOutput").value;
+  let transactionAmount = parseInt(
+    document.getElementById("transactionAmount").value,
+    10
+  );
   var newtx = {
-    inputs: [{ addresses: [address] }],
-    outputs: [
-      { addresses: ["C1rGdt7QEPGiwPMFhNKNhHmyoWpa5X92pn"], value: 100000 }
-    ]
+    inputs: [{ addresses: [sourceAddress] }],
+    outputs: [{ addresses: [destinationAddress], value: transactionAmount }]
   };
+  print(newtx);
 }
