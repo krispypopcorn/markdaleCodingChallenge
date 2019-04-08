@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <Title>Markdale Coding Challenge</Title>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    
+    <div class="m-3">
+        <h1 class="m-3">Markdale Coding Challenge</h1>
+      <h1 class="m-3">Get Balance</h1>
+      <div id="addrForm" class="">
+          <input class="input m-3" type="text" id="addrInput" placeholder="Enter Bitcoin Testnet Address"> </input>
+          <button class="input" id="get" class="m-2">Get Balance</button>
+      </div>
+      <div id="infoDiv">
+          <table id='addrTable' class="m-3">
+              <tr>
+                <th>
+                  Address
+                </th>
+                <th>
+                  Balance (In BTC)
+                </th>
+                <th>
+                  Time
+                </th>
+              </tr>
+          </table>
+      </div>
+      
+      
+    </div>
+    
+    <div id="" class="d-flex">
+        
+        <div class="row m-3">
+            <h1 class="col-12 col-md-8 mt-5">Make a Payment</h1>
+            <input class="col-12 col-md-8 input m-3" type="text" id="transactionInput" placeholder="Enter Source Bitcoin Testnet Address" class="m-3"> </input>
+            <input class="col-12 col-md-8 input m-3" type="text" id="transactionOutput" placeholder="Enter Destination Bitcoin Testnet Address" class="m-3"> </input>
+            <input class=" col-12 col-md-8 input m-3" type="text" id="transactionAmount" placeholder="Enter Destination Bitcoin Testnet Address" class="m-3"> </input>
+            <button id="send" class="col-12 col-md-8 m-3">Send</button>
+        </div>
+      </div>
+
+        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
